@@ -5,3 +5,19 @@ NIM  : 2341760084
 
 A new Flutter project.
 
+Praktikum 1 : Membangun Layout di Flutter
+- Soal 1: Meletakkan widget Column di dalam Expanded agar menyesuaikan ruang yang tersisa di dalam Row. Menambahkan properti crossAxisAlignment: CrossAxisAlignment.start supaya isi kolom rata ke kiri.
+- Soal 2: Menempatkan teks pertama di dalam Container dengan padding bawah sebesar 8.0 dan menambahkan teks lokasi ‘Rocky Mountains, USA’ dengan warna abu-abu menggunakan TextStyle(color: Colors.grey).
+- Soal 3: Menambahkan ikon bintang (Icons.star) berwarna merah (Color.fromARGB(255, 231, 6, 6)) dan teks ‘41’ di bagian akhir baris. Seluruh bagian judul dibungkus dalam Container dengan padding sebesar 32.0 di setiap sisi.
+
+- Mengganti isi body teks ‘Hello World’ dengan variabel titleSection agar layout menampilkan bagian judul tersebut di tampilan utama.
+
+![screenshoot](images/praktikum1.png)
+
+Praktikum 2 : Implementasi button row
+- Membuat method _buildButtonColumn() sebagai fungsi pembantu untuk membangun tiga tombol dengan tata letak seragam.
+- Method ini menerima parameter Color, IconData, dan String untuk menentukan warna, ikon, serta label teks.
+- Mengembalikan widget Column yang berisi ikon di atas teks dengan gaya dan warna sesuai parameter.
+- Digunakan pada buttonSection untuk menampilkan tiga tombol: CALL, ROUTE, dan SHARE dengan jarak yang merata.
+
+![screenshoot](images/praktikum1.png)
