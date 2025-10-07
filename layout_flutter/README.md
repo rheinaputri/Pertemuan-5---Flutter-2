@@ -47,5 +47,26 @@ Langkah 2: Tambahkan variabel text section ke body
 Hasil : 
 ![screenshoot](images/p3.3.png)
 
+### Praktikum 4: Implementasi image section
+
+Langkah 1: Siapkan aset gambar
+- Membuat folder images di root project layout_flutter.
+- Menambahkan file gambar (campground.jpg) ke folder tersebut.
+- Mendaftarkan gambar di pubspec.yaml di bawah bagian assets: dengan indentasi yang benar.
+- Memastikan huruf besar–kecil sesuai dan merestart program agar perubahan diterapkan.
+
+![screenshoot](images/p4.1.png)
+
+Langkah 2: Tambahkan gambar ke body
+
+- Menambahkan aset gambar ke dalam body menggunakan Image.asset().
+- Memberi properti fit: BoxFit.cover agar gambar menutupi seluruh area tampilan secara proporsional tanpa terpotong.
+![screenshoot](images/p4.2.png)
+
+Langkah 3: Terakhir, ubah menjadi ListView
+- Menempatkan semua elemen dalam ListView agar tampilan bisa di-scroll.
+![screenshoot](images/p4.3.png)
+
+
 
 

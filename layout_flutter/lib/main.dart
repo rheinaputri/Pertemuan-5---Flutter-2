@@ -66,9 +66,16 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Layout: Rheina Putri Ferdiansyah (2341760084)',
       home: Scaffold(
-        appBar: AppBar(title: const Text('Flutter Layout Demo')),
+        appBar: AppBar(
+          title: const Text('Flutter Layout Demo')),
         body: ListView(
           children: [
+            Image.asset(
+              'images/campground.jpeg',
+              width: 600,
+              height: 240,
+              fit: BoxFit.cover,
+            ),
             titleSection,
             buttonSection,
             textSection,
