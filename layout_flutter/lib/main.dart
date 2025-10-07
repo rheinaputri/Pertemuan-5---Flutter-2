@@ -54,20 +54,20 @@ class MyApp extends StatelessWidget {
     Widget textSection = Container(
       padding: const EdgeInsets.all(32),
       child: const Text(
-        'Terletak di tepi danau yang dikelilingi hutan pinus dan pegunungan, '
+        'Terletak di tepi danau yang dikelilingi hutan pinus dan pegunungan, \n\n'
         'Danau Pines Campground menawarkan pengalaman berkemah yang tenang dan menenangkan. '
         'Saat malam tiba, langit dipenuhi bintang dan suasana hangat api unggun menemani percakapan '
-        'di antara tenda-tenda. Tempat ini menjadi pilihan sempurna untuk menikmati keindahan alam '
+        'di antara tenda-tenda.\n\n'
+        'Tempat ini menjadi pilihan sempurna untuk menikmati keindahan alam '
         'dan ketenangan jauh dari keramaian.\n\n'
-        'Karya Rheina Putri Ferdiansyah 2341760084'
+        'Karya Rheina Putri Ferdiansyah 2341760084',
       ),
     );
 
     return MaterialApp(
       title: 'Flutter Layout: Rheina Putri Ferdiansyah (2341760084)',
       home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Flutter Layout Demo')),
+        appBar: AppBar(title: const Text('Flutter Layout Demo')),
         body: ListView(
           children: [
             Image.asset(

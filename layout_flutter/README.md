@@ -70,6 +70,11 @@ Langkah 3: Terakhir, ubah menjadi ListView
 Hasil Akhir :
 ![screenshoot](images/p4.4.png)
 
+![Demo Aplikasi](images/hasil.gif)
+
+
+
+
 
 
 
