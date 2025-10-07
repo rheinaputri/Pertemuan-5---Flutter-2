@@ -16,8 +16,20 @@ Praktikum 1 : Membangun Layout di Flutter
 
 Praktikum 2 : Implementasi button row
 - Membuat method _buildButtonColumn() sebagai fungsi pembantu untuk membangun tiga tombol dengan tata letak seragam.
+![screenshoot](images/p2.1.png)
+![screenshoot](images/p2.2.png)
+
+
+-Langkah 2: Buat widget buttonSection
+![screenshoot](images/p2.1.png)
+
 - Method ini menerima parameter Color, IconData, dan String untuk menentukan warna, ikon, serta label teks.
 - Mengembalikan widget Column yang berisi ikon di atas teks dengan gaya dan warna sesuai parameter.
-- Digunakan pada buttonSection untuk menampilkan tiga tombol: CALL, ROUTE, dan SHARE dengan jarak yang merata.
 
+Langkah 3: Tambah button section ke body
+- Digunakan pada buttonSection untuk menampilkan tiga tombol: CALL, ROUTE, dan SHARE dengan jarak yang merata.
+![screenshoot](images/p2.3.png)
+
+
+Hasil : 
 ![screenshoot](images/praktikum1.png)

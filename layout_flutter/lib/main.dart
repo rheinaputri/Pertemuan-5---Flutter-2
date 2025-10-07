@@ -33,13 +33,62 @@ class MyApp extends StatelessWidget {
           ),
         ),
         // soal 3
-        const Icon(
-          Icons.star, color: Color.fromARGB(255, 231, 6, 6)
-          ),
+        const Icon(Icons.star, color: Color.fromARGB(255, 231, 6, 6)),
         const Text('41'),
       ],
     ),
   );
+
+  @override
+  Widget build(BuildContext context) {
+    Color color = Theme.of(context).primaryColor;
+
+    final buttonSection = Row(
+      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      children: [
+        _buildButtonColumn(color, Icons.call, 'CALL'),
+        _buildButtonColumn(color, Icons.near_me, 'ROUTE'),
+        _buildButtonColumn(color, Icons.share, 'SHARE'),
+      ],
+    );
+
+    // const textSection = Padding(
+    //   padding: EdgeInsets.all(32.0),
+    //   child: Text(
+    //     'Terletak di tepi danau yang dikelilingi hutan pinus dan pegunungan, '
+    //     'Danau Pines Campground menawarkan pengalaman berkemah yang tenang dan menenangkan. '
+    //     'Saat malam tiba, langit dipenuhi bintang dan suasana hangat api unggun menemani percakapan '
+    //     'di antara tenda-tenda. Tempat ini menjadi pilihan sempurna untuk menikmati keindahan alam '
+    //     'dan ketenangan jauh dari keramaian.',
+    //     softWrap: true,
+    //   ),
+    // );
+
+    return MaterialApp(
+      title: 'Flutter Layout: Rheina Putri Ferdiansyah (2341760084)',
+      home: Scaffold(
+        appBar: AppBar(title: const Text('Flutter Layout Demo')),
+
+        body: Column(
+          children: [
+            titleSection, 
+            buttonSection]),
+        // body: ListView(
+        //   children: [
+        //     Image.asset(
+        //       'images/campground.jpeg',
+        //       width: 600,
+        //       height: 240,
+        //       fit: BoxFit.cover,
+        //     ),
+        //     titleSection,
+        //     buttonSection,
+        //     textSection,
+        //   ],
+        // ),
+      ),
+    );
+  }
 
   // Fungsi helper untuk membuat tombol
   Column _buildButtonColumn(Color color, IconData icon, String label) {
@@ -60,60 +109,6 @@ class MyApp extends StatelessWidget {
           ),
         ),
       ],
-    );
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    Color color = Theme.of(context).primaryColor;
-
-    final buttonSection = Row(
-      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-      children: [
-        _buildButtonColumn(color, Icons.call, 'CALL'),
-        _buildButtonColumn(color, Icons.near_me, 'ROUTE'),
-        _buildButtonColumn(color, Icons.share, 'SHARE'),
-      ],
-    );
-
-    const textSection = Padding(
-      padding: EdgeInsets.all(32.0),
-      child: Text(
-        'Terletak di tepi danau yang dikelilingi hutan pinus dan pegunungan, '
-        'Danau Pines Campground menawarkan pengalaman berkemah yang tenang dan menenangkan. '
-        'Saat malam tiba, langit dipenuhi bintang dan suasana hangat api unggun menemani percakapan '
-        'di antara tenda-tenda. Tempat ini menjadi pilihan sempurna untuk menikmati keindahan alam '
-        'dan ketenangan jauh dari keramaian.',
-        softWrap: true,
-      ),
-    );
-
-    return MaterialApp(
-      title: 'Flutter Layout: Rheina Putri Ferdiansyah (2341760084)',
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Flutter Layout Demo')
-          ),
-
-          body: Column(
-            children:[
-              titleSection
-            ]
-          )
-        // body: ListView(
-        //   children: [
-        //     Image.asset(
-        //       'images/campground.jpeg',
-        //       width: 600,
-        //       height: 240,
-        //       fit: BoxFit.cover,
-        //     ),
-        //     titleSection,
-        //     buttonSection,
-        //     textSection,
-        //   ],
-        // ),
-      ),
     );
   }
 }
