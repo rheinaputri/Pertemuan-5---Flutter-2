@@ -8,16 +8,14 @@ class MyApp extends StatelessWidget {
   MyApp({super.key});
 
   // Bagian title
-  final Widget titleSection = Container(
+  Widget titleSection = Container(
     padding: const EdgeInsets.all(32.0),
     child: Row(
       children: [
         Expanded(
-          // soal 1
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              // soal 2
               Container(
                 padding: const EdgeInsets.only(bottom: 8.0),
                 child: const Text(
@@ -32,7 +30,6 @@ class MyApp extends StatelessWidget {
             ],
           ),
         ),
-        // soal 3
         const Icon(Icons.star, color: Color.fromARGB(255, 231, 6, 6)),
         const Text('41'),
       ],
@@ -43,7 +40,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     Color color = Theme.of(context).primaryColor;
 
-    final buttonSection = Row(
+    // Bagian tombol
+    Widget buttonSection = Row(
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: [
         _buildButtonColumn(color, Icons.call, 'CALL'),
@@ -52,40 +50,30 @@ class MyApp extends StatelessWidget {
       ],
     );
 
-    // const textSection = Padding(
-    //   padding: EdgeInsets.all(32.0),
-    //   child: Text(
-    //     'Terletak di tepi danau yang dikelilingi hutan pinus dan pegunungan, '
-    //     'Danau Pines Campground menawarkan pengalaman berkemah yang tenang dan menenangkan. '
-    //     'Saat malam tiba, langit dipenuhi bintang dan suasana hangat api unggun menemani percakapan '
-    //     'di antara tenda-tenda. Tempat ini menjadi pilihan sempurna untuk menikmati keindahan alam '
-    //     'dan ketenangan jauh dari keramaian.',
-    //     softWrap: true,
-    //   ),
-    // );
+    // Bagian teks deskripsi
+    Widget textSection = Container(
+      padding: const EdgeInsets.all(32),
+      child: const Text(
+        'Terletak di tepi danau yang dikelilingi hutan pinus dan pegunungan, '
+        'Danau Pines Campground menawarkan pengalaman berkemah yang tenang dan menenangkan. '
+        'Saat malam tiba, langit dipenuhi bintang dan suasana hangat api unggun menemani percakapan '
+        'di antara tenda-tenda. Tempat ini menjadi pilihan sempurna untuk menikmati keindahan alam '
+        'dan ketenangan jauh dari keramaian.\n\n'
+        'Karya Rheina Putri Ferdiansyah 2341760084'
+      ),
+    );
 
     return MaterialApp(
       title: 'Flutter Layout: Rheina Putri Ferdiansyah (2341760084)',
       home: Scaffold(
         appBar: AppBar(title: const Text('Flutter Layout Demo')),
-
-        body: Column(
+        body: ListView(
           children: [
-            titleSection, 
-            buttonSection]),
-        // body: ListView(
-        //   children: [
-        //     Image.asset(
-        //       'images/campground.jpeg',
-        //       width: 600,
-        //       height: 240,
-        //       fit: BoxFit.cover,
-        //     ),
-        //     titleSection,
-        //     buttonSection,
-        //     textSection,
-        //   ],
-        // ),
+            titleSection,
+            buttonSection,
+            textSection,
+          ],
+        ),
       ),
     );
   }

@@ -33,3 +33,19 @@ Langkah 3: Tambah button section ke body
 
 Hasil : 
 ![screenshoot](images/praktikum1.png)
+
+### Praktikum 3: Implementasi text section
+Langkah 1: Buat widget textSection
+- Membuat variabel textSection berisi teks dalamContainer dengan padding.
+- Menambahkan softWrap: true agar teks otomatis membungkus.
+- Diletakkan di bawah buttonSection.
+![screenshoot](images/p3.1.png)
+
+Langkah 2: Tambahkan variabel text section ke body
+![screenshoot](images/p3.1.png)
+
+Hasil : 
+![screenshoot](images/p3.3.png)
+
+
+
