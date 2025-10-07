@@ -67,6 +67,9 @@ Langkah 3: Terakhir, ubah menjadi ListView
 - Menempatkan semua elemen dalam ListView agar tampilan bisa di-scroll.
 ![screenshoot](images/p4.3.png)
 
+Hasil Akhir :
+![screenshoot](images/p4.4.png)
+
 
 
 

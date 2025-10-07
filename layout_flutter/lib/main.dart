@@ -73,7 +73,7 @@ class MyApp extends StatelessWidget {
             Image.asset(
               'images/campground.jpeg',
               width: 600,
-              height: 240,
+              height: 300,
               fit: BoxFit.cover,
             ),
             titleSection,
